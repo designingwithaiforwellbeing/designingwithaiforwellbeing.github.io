@@ -104,10 +104,18 @@
                 }
 
                 #banner_image{
+                    position: absolute;
                     background-image: url('./images/banner.png');
                     height: 700px;
                     background-size: cover;
                     background-position: center center;
+                }
+
+                .parallax {
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
 
                 .gradient-overlay {
@@ -155,7 +163,7 @@
 
                 </div>
 
-                <div class="col-12 bg-image position-relative shadow rounded" id = 'banner_image'>
+                <div class="col-12 bg-image parallax position-relative shadow rounded" id = 'banner_image'>
                     
                     <!-- Gradient overlay -->
                     <div class="gradient-overlay"></div>
